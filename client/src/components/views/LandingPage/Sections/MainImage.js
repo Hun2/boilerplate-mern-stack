@@ -4,8 +4,11 @@ import { text } from 'body-parser';
 function MainImage(props) {
   return (
     <div style={{ 
-      background:  `url('${props.image}'), #1c1c1c`, height: '500px', backgroundSize: '100%, cover', 
-      backgroundPosition: 'center, center', 
+      height: '500px',
+      backgroundImage: `url('${props.image}')`,
+      backgroundSize: 'cover', 
+      backgroundPosition: 'center, center',
+      backgroundRepeat: 'no-repeat',
       width: '100%', 
       position: 'relative'
     }}>
